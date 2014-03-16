@@ -118,14 +118,14 @@ end;
 procedure TForm1.ExitMClick(Sender: TObject);
 var q:integer;
 begin
-q:=MessageDlg('Вы действительно хотите выйти?',mtConfirmation,[mbYes,mbNo],0);
+q:=MessageDlg('Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ РІС‹Р№С‚Рё?',mtConfirmation,[mbYes,mbNo],0);
 case q of
 mrYes:Close;
 mrNo:Exit;
 end;
 end;
 
-//Расширить сузить картинку
+//Р Р°СЃС€РёСЂРёС‚СЊ СЃСѓР·РёС‚СЊ РєР°СЂС‚РёРЅРєСѓ
 procedure TForm1.CheckBox1Click(Sender: TObject);
 begin
 If CheckBox1.Checked=True then begin
@@ -172,7 +172,7 @@ begin
    ConersCodedIm.Stretch:=False;
 end;
 
-//Рисуем картинки
+//Р РёСЃСѓРµРј РєР°СЂС‚РёРЅРєРё
 procedure TForm1.PaintIm;
 begin
    RealImage.Repaint;
@@ -402,7 +402,7 @@ if (GorCodedIm.Visible) and (VerCodedIm.Visible) or
    DecodeM.Enabled:=False;
 end;
 
-//Уголки
+//РЈРіРѕР»РєРё
 procedure TForm1.ConersClick(Sender: TObject);
 var i,j:longint;
     H,W:longint;
@@ -476,7 +476,7 @@ CheckVis;
 {CheckBox1Click(Sender);}
 end;
 
-//Горизонтальные перепады
+//Р“РѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅС‹Рµ РїРµСЂРµРїР°РґС‹
 procedure TForm1.GorizontalClick(Sender: TObject);
 var i,j:longint;
     H,W:longint;
@@ -516,7 +516,7 @@ CheckVis;
 {CheckBox1Click(Sender);}
 end;
 
-//Вертикальные перепады
+//Р’РµСЂС‚РёРєР°Р»СЊРЅС‹Рµ РїРµСЂРµРїР°РґС‹
 procedure TForm1.VerticalClick(Sender: TObject);
 var i,j : longint;
     H,W : longint;
